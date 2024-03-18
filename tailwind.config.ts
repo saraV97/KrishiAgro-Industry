@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "374px",
+      },
       fontFamily: {
         font1: ["Madimi One"],
         font2: ["Dosis"],

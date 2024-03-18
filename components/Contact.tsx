@@ -17,7 +17,7 @@ const Contact = () => {
         >
           Contact us
         </motion.h1>
-        <section className="text-gray-600 body-font relative">
+        <section className="text-gray-600 body-font relative px-3 xs:px-2">
           <div
             className="container px-5 py-20 mx-auto flex sm:flex-nowrap flex-wrap  
           border rounded-xl shadow-xl bg-gradient-to-r from-green-300 to-green-500"
@@ -31,7 +31,10 @@ const Contact = () => {
               </p>
               <form>
                 <div className="relative mb-4">
-                  <label id="name" className="leading-7 text-sm text-gray-800">
+                  <label
+                    id="name"
+                    className="leading-7 text-sm text-gray-800 pl-2"
+                  >
                     Name
                   </label>
                   <input
@@ -43,7 +46,10 @@ const Contact = () => {
                   />
                 </div>
                 <div className="relative mb-4">
-                  <label id="email" className="leading-7 text-sm text-gray-800">
+                  <label
+                    id="email"
+                    className="leading-7 text-sm text-gray-800 pl-2"
+                  >
                     Email
                   </label>
                   <input
@@ -55,7 +61,10 @@ const Contact = () => {
                   />
                 </div>
                 <div className="relative mb-4">
-                  <label id="email" className="leading-7 text-sm text-gray-800">
+                  <label
+                    id="email"
+                    className="leading-7 text-sm text-gray-800 pl-2"
+                  >
                     City
                   </label>
                   <input
@@ -69,7 +78,7 @@ const Contact = () => {
                 <div className="relative mb-4">
                   <label
                     id="message"
-                    className="leading-7 text-sm text-gray-800"
+                    className="leading-7 text-sm text-gray-800 pl-2"
                   >
                     Message
                   </label>

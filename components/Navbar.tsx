@@ -24,7 +24,7 @@ const Navbar = () => {
       className="flexBetween max-container padding-container flex-no-wrap fixed top-0 w-full z-30
      py-5 backdrop-blur-sm border-b"
     >
-      <Link href="/">
+      <Link href="#">
         {/* <Image
           src="/krishilogo.svg"
           alt="logo"
@@ -136,7 +136,7 @@ const Navbar = () => {
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] mb-40  underline-offset-4 underline decoration-green-400">
+        <h1 className="w-full text-3xl font-bold text-[#00df9a] xs:mb-40  underline-offset-4 underline decoration-green-900">
           Krishi.
         </h1>
 
@@ -152,7 +152,7 @@ const Navbar = () => {
           </Link>
         ))}
 
-        <div className="mt-20 border-t-2 flex gap-20 ">
+        <div className="xs:mt-20 border-t-2 flex gap-20 ">
           <a
             href="#"
             className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"

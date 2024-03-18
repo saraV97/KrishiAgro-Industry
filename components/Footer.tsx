@@ -39,14 +39,14 @@ const Footer = () => {
             </div>
             <div className="p-5 sm:w-7/12 sm:border-r border-black text-center">
               <h3 className="font-bold text-xl text-amber-900 mb-4 font-font3">
-                Contact us to know more.
+                Connect us to know more.
               </h3>
               <p className="text-gray-800 text-sm mb-10">
                 Join us in cultivating a brighter future for farming, one
                 harvest at a time.
               </p>
             </div>
-            <div className="p-5 sm:w-3/12 mr-4 text-center md:text-left">
+            <div className="p-5 sm:w-3/12  text-center md:text-left">
               <div className="text-sm uppercase text-amber-900 font-bold font-font3">
                 Contact Us
               </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 </li>
                 <li className="my-2">
                   <a
-                    className="hover:text-green-600 text-sm "
+                    className="hover:text-green-600 text-sm break-words"
                     href="https://mail.google.com/mail/u/0/?fs=1&to=krishiagroindustry22@gmail.com&su=YourSubject&body=Hey&tf=cm"
                   >
                     krishiagroindustry22@gmail.com

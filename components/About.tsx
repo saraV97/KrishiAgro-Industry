@@ -103,18 +103,18 @@ const About = () => {
                 <span className="text-green-600 font-semibold">
                   KrishiAgro,
                 </span>{" "}
-                your trusted partner in agriculture, proudly rooted in India's
-                rich farming heritage. Specializing in premium vermicompost,
-                nutrient-packed seaweeds, and a variety of agricultural
-                solutions, we're dedicated to serving local farmers with
-                products tailored to Indian soil and climate.{" "}
+                your trusted partner in agriculture, proudly rooted in
+                India&apos;s rich farming heritage. Specializing in premium
+                vermicompost, nutrient-packed seaweeds, and a variety of
+                agricultural solutions, we&apos;re dedicated to serving local
+                farmers with products tailored to Indian soil and climate.{" "}
                 <span className="text-green-600 font-semibold">
                   Our commitment to sustainability and eco-friendly practices
                   drives us to deliver high-quality, locally sourced products
                   that promote soil health and enhance crop yields.
                 </span>{" "}
-                Join us in nurturing India's agricultural future with natural,
-                homegrown solutions from
+                Join us in nurturing India&apos;s agricultural future with
+                natural, homegrown solutions from
                 <span className="text-green-600 font-semibold">
                   {" "}
                   KrishiAgro.

@@ -65,9 +65,11 @@ const Products = () => {
               className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
             >
               <a href="#">
-                <img
+                <Image
                   src={data.image}
                   alt="Product"
+                  width={320}
+                  height={288}
                   className="h-80 w-72 object-cover rounded-t-xl"
                 />
                 <div className="px-4 py-3 w-72">
