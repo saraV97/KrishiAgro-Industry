@@ -22,7 +22,7 @@ const Navbar = () => {
       whileInView="animate"
       viewport={{ once: true }}
       className="flexBetween max-container padding-container flex-no-wrap fixed top-0 w-full z-30
-     py-5 backdrop-blur-sm border-b"
+     py-5 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30"
     >
       <Link href="#">
         {/* <Image
@@ -34,17 +34,17 @@ const Navbar = () => {
         /> */}
         {/* <Logo /> */}
         {/* <div className="text-2xl text-green-500">Krishi</div> */}
-        <h1 className="w-full text-3xl font-bold text-green-500 underline-offset-4 underline decoration-gray-300">
+        <h1 className="w-full text-3xl font-bold text-green-500 underline-offset-4 underline decoration-white">
           Krishi.
         </h1>
       </Link>
-      <ul className=" hidden h-full gap-12 lg:flex border px-10 rounded-lg pt-1 bg-green-600">
+      <ul className=" hidden h-full gap-12 lg:flex border px-10 rounded-lg pt-1 bg-slate-100">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
             key={link.key}
-            className=" regular-16 text-white flexCenter 
-            cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className=" regular-16 text-black flexCenter 
+            cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-500"
           >
             {link.label}
           </Link>
@@ -97,7 +97,10 @@ const Navbar = () => {
             </svg>
           </button>
         ) : (
-          <button className="flex items-center px-3 py-2 border rounded border-slate-300 text-slate-700 hover:text-green-500 hover:border-gray-500">
+          <button
+            className="flex items-center px-3 py-2 border rounded
+           border-white text-black hover:text-green-500 hover:border-gray-500"
+          >
             {/* <Image
             src="/close.png"
             alt="close"
@@ -136,10 +139,9 @@ const Navbar = () => {
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] xs:mb-40  underline-offset-4 underline decoration-green-900">
+        <h1 className="w-full text-3xl font-bold text-green-500 xs:mb-40  underline-offset-4 underline decoration-green-900">
           Krishi.
         </h1>
-
         {/* Mobile Navigation Items */}
         {NAV_LINKS.map((link) => (
           <Link
@@ -152,7 +154,7 @@ const Navbar = () => {
           </Link>
         ))}
 
-        <div className="xs:mt-20 border-t-2 flex gap-20 ">
+        <div className="xs:mt-10 border-t-2 flex gap-20 ">
           <a
             href="#"
             className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"

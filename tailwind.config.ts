@@ -35,12 +35,13 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "hero-pattern": "url('/heroimg.jpg')",
+        "hero-pattern": "url('/field.jpg')",
+        "hero-pattern1": "url('/heroimg2.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",
       },
       screens: {
-        xs: "374px",
+        xs: "376px",
         "3xl": "1680px",
         "4xl": "2200px",
       },

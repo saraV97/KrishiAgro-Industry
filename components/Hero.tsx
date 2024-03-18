@@ -110,9 +110,10 @@ const Hero = () => {
     //     </motion.div>
     //   </div>
     // </section>
-    <div className="relative isolate overflow-hidden bg-hero-pattern xl:bg-[url('/heroimg1.jpg')] max-w-screen bg-cover bg-center h-screen">
+    <div className="relative isolate overflow-hidden bg-hero-pattern lg:bg-[url('/heroimg1.jpg')] max-w-screen bg-cover bg-center h-screen">
+      {/* <div className="xl:bg-hero-pattern1 max-w-screen bg-opacity-5 z-8 bg-transparent"></div> */}
       <div
-        className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+        className="absolute left-[calc(50%-4rem)] -z-10 top-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
         aria-hidden="true"
       >
         <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"></div>
@@ -125,11 +126,11 @@ const Hero = () => {
           viewport={{ once: true }}
           className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:pt-8"
         >
-          <h1 className="mt-10 text-4xl xs:text-6xl lg:text-[8rem] font-bold tracking-tight font-font3 text-white sm:text-7xl">
+          <h1 className="mt-10 text-4xl xs:text-6xl lg:text-[8rem] font-bold tracking-tight font-font3 text-black sm:text-7xl">
             Nourish your <span className="text-yellow-400">soil, </span>
             <br />
             Nourish your
-            <span className="text-green-600"> crops</span>
+            <span className="text-green-700"> crops</span>
             {/* <span className="text-sky-500">your workflow</span> with
             <span className="text-sky-500">Zynx</span> */}
           </h1>
@@ -149,7 +150,8 @@ const Hero = () => {
           </motion.div>
           <p className="mt-6 text-3xl font-font3 leading-8 text-white">
             <span className="text-center">
-              Grow smarter, <span className="text-green-500"> Farm</span> better
+              <span className="text-yellow-400">Grow smarter, </span>
+              Farm better
             </span>
           </p>
           <motion.div

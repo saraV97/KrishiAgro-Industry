@@ -39,7 +39,7 @@ const Review = () => {
 
   return (
     <section className="flex flex-col xl:flex-row ">
-      <div className="w-screen p-5 mb-5">
+      <div className="w-screen  mb-5">
         <motion.h1
           variants={titleVariants1}
           initial="initial"
@@ -49,7 +49,7 @@ const Review = () => {
         >
           What our customers say
         </motion.h1>
-        <div className="w-3/4 m-auto">
+        <div className="w-4/5 m-auto">
           <Slider {...settings}>
             {REVIEWS.map((data) => (
               <div className="px-5 py-20" key={data.id}>
