@@ -25,65 +25,35 @@ const Gallery = () => {
                 width={500}
                 height={400}
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836980/Krishi/potouu371zk4mvfyflnk.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/hpmbw5imwhquxly0houo.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836974/Krishi/oyydo7257lmlnckpa7my.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/dkwfkd1nw96auuqe43ot.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836980/Krishi/l6vjosertybpjup1yhof.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/n6q7jy3vplnobdxndrto.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836977/Krishi/b1enp7c881pu5i5ntiqt.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/qospnlr4zq1cgxzqnquw.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836978/Krishi/obe1u75xxllwetzbwi0z.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836979/Krishi/qh73dsfqb09naxseifoe.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836977/Krishi/bbenvc1vzwaqsaalsfk9.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836972/Krishi/kpt8j9hjigpjtjwyeuwx.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836980/Krishi/qvz7dnhn1owvopty05pn.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/i8ox9mi6198t06cla0oy.webp"
                 alt=""
               />
             </div>
@@ -92,35 +62,28 @@ const Gallery = () => {
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836972/Krishi/zvnet8ytqqkkpbgwrtoa.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/u6c6cqh8tmuhaqxyxgnd.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836978/Krishi/uphkvgcylaingmmluykn.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/ygmtsa9grfkafh1i33si.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836967/Krishi/grbwxknjvmcmmywx19vk.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/pf0punivy11omrcjakqv.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836968/Krishi/jvbui6zw9313urkpfmz7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836976/Krishi/txmbmimlqwlbva03refj.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/xirsjljuj5tvrh4vmfff.webp"
                 alt=""
               />
             </div>
@@ -129,35 +92,72 @@ const Gallery = () => {
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836972/Krishi/wztinallncjxptgycz3r.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/jlapmibln0hngstxtau7.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836974/Krishi/k8jyrrqeyzt3zixyrecv.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/vzyabdhpg6vztowmekho.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836972/Krishi/jnfh9pvmu4zqiyyz8bs0.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/dc4obkgrb5cnybculpxw.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836967/Krishi/lx2jmca49e5o0vakadtg.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/e5qyqjdet3vnkxdkn2fv.webp"
                 alt=""
               />
             </div>
             <div>
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836975/Krishi/y2dtukd4mtblqdh0dxq3.jpg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/qoaibsjw4qsywpr3pqfp.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/sonmwbpbafw01i5k08u0.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/tjzxujw6sbzaiskdt913.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/i7kwahdl51pyhmkgsure.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/e5klkposuoigperufexn.webp"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="h-auto max-w-full rounded-lg"
+                src="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/saqxtnbzyjsen6xat6wa.webp"
                 alt=""
               />
             </div>

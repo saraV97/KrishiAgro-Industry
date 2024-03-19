@@ -39,15 +39,15 @@ const Review = () => {
 
   return (
     <section className="flex flex-col xl:flex-row ">
-      <div className="w-screen  mb-5">
+      <div className="w-screen  mb-5 mt-5">
         <motion.h1
           variants={titleVariants1}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex justify-center font-font1 py-10 text-5xl text-center"
+          className=" font-font1 py-10  text-5xl text-center"
         >
-          What our <span className="text-green-500">&nbsp;customers say</span>
+          What our<span className="text-green-500">&nbsp;customers say</span>
         </motion.h1>
         <div className="w-4/5 m-auto">
           <Slider {...settings}>
