@@ -1,10 +1,34 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Button from "./Button";
 import { titleVariants1 } from "./Animation";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef(null);
+
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5ysam0p",
+        "template_5afwgma",
+        form.current!,
+        "IWNAjZh2ycyXXUmi8"
+      )
+      .then(
+        () => {
+          alert("Mail sent successfully!");
+        },
+        (error) => {
+          alert("Error: Mail not sent.");
+        }
+      );
+    event.currentTarget.reset();
+  };
+
   return (
     <section id="contact" className="flex flex-col xl:flex-row border-20">
       <div className="w-screen">
@@ -15,7 +39,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="flex justify-center font-font1 py-10 text-5xl"
         >
-          Contact us
+          Contact <span className="text-green-500">&nbsp;us</span>
         </motion.h1>
         <section className="text-gray-600 body-font relative px-3 xs:px-2">
           <div
@@ -29,7 +53,7 @@ const Contact = () => {
               <p className="leading-relaxed mb-5 text-center text-gray-600">
                 Get a quote.
               </p>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="relative mb-4">
                   <label
                     id="name"
@@ -89,14 +113,15 @@ const Contact = () => {
                     className="w-full bg-white rounded-xl border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
+                <div className="flex justify-center">
+                  <Button
+                    type="submit"
+                    title="Send"
+                    // icon="/user.svg"
+                    variant="btn_yellow w-full"
+                  />
+                </div>
               </form>
-
-              <Button
-                type="button"
-                title="Send"
-                // icon="/user.svg"
-                variant="btn_yellow"
-              />
             </div>
 
             <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:ml-10 p-10 flex items-end justify-start relative md:ml-20">

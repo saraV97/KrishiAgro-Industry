@@ -103,7 +103,7 @@ export const REVIEWS = [
     review:
       "Outstanding vermicompost, impeccable service, a farmer's dream come true.",
     name: "Kumar",
-    img: "/user1.jpg",
+    img: "/user2.jpg",
     designation: "Farmer",
     id: 1,
   },
@@ -119,7 +119,7 @@ export const REVIEWS = [
     review:
       "Boosted yields, eco-friendly practices. Product delivers excellence consistently.",
     name: "Peter",
-    img: "/user1.jpg",
+    img: "/user3.png",
     designation: "Farmer",
     id: 3,
   },
@@ -127,7 +127,7 @@ export const REVIEWS = [
     review:
       "Efficient, eco-conscious, and effective. They sets the standard in agriculture.",
     name: "Karthik",
-    img: "/user1.jpg",
+    img: "/user3.png",
     designation: "Reseller",
     id: 4,
   },

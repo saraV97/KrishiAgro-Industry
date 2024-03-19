@@ -17,7 +17,7 @@ const Choose = () => {
           viewport={{ once: true }}
           className="flex justify-center font-font1 py-10 text-5xl"
         >
-          Why choose us?
+          Why choose <span className="text-green-500">&nbsp;us?</span>
         </motion.h1>
         <div className="-mx-4 flex flex-wrap p-8">
           <div className="w-full px-4 md:w-1/2 lg:w-1/3">

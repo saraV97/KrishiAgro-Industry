@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@/constants/logo";
+// import Logo from "@/constants/logo";
 import React, { useEffect, useState } from "react";
 import {
   titleVariants,
@@ -7,6 +7,7 @@ import {
   fadeInAnimationVariants2,
 } from "./Animation";
 import { motion } from "framer-motion";
+import Logo1 from "@/constants/Logo1";
 
 const Hero = () => {
   const [width, setWidth] = useState(0);
@@ -110,7 +111,7 @@ const Hero = () => {
     //     </motion.div>
     //   </div>
     // </section>
-    <div className="relative isolate overflow-hidden bg-hero-pattern lg:bg-[url('/heroimg1.jpg')] max-w-screen bg-cover bg-center h-screen">
+    <div className="relative isolate overflow-hidden bg-hero-pattern max-w-screen bg-cover bg-center h-screen">
       {/* <div className="xl:bg-hero-pattern1 max-w-screen bg-opacity-5 z-8 bg-transparent"></div> */}
       <div
         className="absolute left-[calc(50%-4rem)] -z-10 top-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
@@ -126,18 +127,18 @@ const Hero = () => {
           viewport={{ once: true }}
           className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:pt-8"
         >
-          <h1 className="mt-10 text-4xl xs:text-6xl lg:text-[8rem] font-bold tracking-tight font-font3 text-black sm:text-7xl">
-            Nourish your <span className="text-yellow-400">soil, </span>
+          <h1 className="mt-10 opacity-75 text-4xl xs:text-[50px] lg:text-[8rem] font-bold tracking-tight font-font3 text-black sm:text-7xl">
+            Feed the <span className="text-black">soil, </span>
             <br />
-            Nourish your
-            <span className="text-green-700"> crops</span>
+            Feed the
+            <span className="text-black"> future</span>
             {/* <span className="text-sky-500">your workflow</span> with
             <span className="text-sky-500">Zynx</span> */}
           </h1>
 
           <motion.div
             variants={fadeInAnimationVariants1}
-            className="mt-5 flex items-center justify-center gap-x-6"
+            className="mt-4 flex items-center justify-center gap-x-6 mx-10 md:mx-5 lg:mx-0"
           >
             {/* <a
               href="/register"
@@ -146,21 +147,33 @@ const Hero = () => {
             >
               Try Now →
             </a> */}
-            <Logo />
+            <Logo1 />
           </motion.div>
-          <p className="mt-6 text-3xl font-font3 leading-8 text-white">
+          <p className="mt-5 mx-14 text-3xl lg:text-4xl font-font2 leading-8 text-white">
             <span className="text-center">
-              <span className="text-yellow-400">Grow smarter, </span>
-              Farm better
+              Grow smarter, Farm better with our
+              <span className="text-yellow-300"> natural solutions.</span>
             </span>
           </p>
+          {/* <p className="mt-6 text-lg  md:text-xl  px-10 leading-8 text-[#FBFADA]">
+            <span className="text-center">
+              <span className="text-yellow-400">Grow smarter, </span>
+              Grow smarter, farm better with our natural solutions.
+            </span>
+          </p> */}
           <motion.div
             variants={fadeInAnimationVariants2}
             className="scroll-down svg"
             id="home-scroll-down"
           >
             {/* className="mt-6 text-3xl font-font3 leading-8 text-white"> */}
-            <a href="#products">
+            <a
+              href="#products"
+              className="flex flex-col justify-center items-center"
+            >
+              <div className="pb-1 text-gray-100 opacity-60">
+                {isMobile ? "Swipe" : "Scroll"}
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -178,6 +191,7 @@ const Hero = () => {
                   stroke="#c7c4b8"
                   strokeWidth="2.5"
                   strokeMiterlimit="10"
+                  opacity="0.5"
                   d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"
                 ></path>
                 <path
@@ -187,9 +201,7 @@ const Hero = () => {
                 ></path>
               </svg>
               {/* <i className="icon icon-arrow-down"></i> */}
-              <div className="pt-2 pr-1 text-gray-100 ">
-                {isMobile ? "Swipe" : "Scroll"}
-              </div>
+
               {/* <div className=" lg:invisible pt-2 pr-1 text-gray-100 ">Swipe</div> */}
             </a>
           </motion.div>

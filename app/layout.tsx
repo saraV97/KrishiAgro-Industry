@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ScrollUp from "@/components/scrollup";
 
 export const metadata: Metadata = {
   title: "KrishiAgro",
@@ -17,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <main className="relative overflow-hidden">{children}</main>
         <Footer />
-        <ScrollUp />
       </body>
     </html>
   );

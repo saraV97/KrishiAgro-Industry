@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { titleVariants1, productVariants } from "./Animation";
 import { motion } from "framer-motion";
+import CldVideoPlayer from "svelte-cloudinary";
+import Button from "./Button";
 
 const About = () => {
   return (
@@ -21,9 +23,9 @@ const About = () => {
         <div className="relative flex pt-12">
           <div
             className="absolute max-w-[1000px] top-[200px] left-[10px] z-[-2] opacity-70 
-          md:top-[180px] md:max-w-[550px] md:left-[-40px]
-          lg:top-[140px] lg:max-w-[700px] lg:left-[-40px]
-          xl:top-[70px] xl:max-w-[900px] xl:left-[50px] "
+          md:top-[260px] md:max-w-[550px] md:left-[-40px]
+          lg:top-[190px] lg:max-w-[700px] lg:left-[-40px]
+          xl:top-[120px] xl:max-w-[900px] xl:left-[50px] "
           >
             <Image
               src="/graph.png"
@@ -41,7 +43,8 @@ const About = () => {
           viewport={{ once: true }}
           className="flex justify-center font-font1 py-10 text-5xl"
         >
-          What we do!
+          What we
+          <span className="text-green-500">&nbsp;do!</span>
         </motion.h1>
         <div className="sm:flex items-center max-w-full xl:mx-20">
           <div className="sm:w-1/2 p-10">
@@ -54,7 +57,7 @@ const About = () => {
                 className="border rounded-xl w-[350px] shadow-md"
               /> */}
 
-              <div className="grid grid-cols-2  gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <div className="grid gap-4">
                   <div>
                     <Image
@@ -89,6 +92,14 @@ const About = () => {
                 </div>
               </div>
             </div>
+            <div>
+              <a
+                href="/gallery"
+                className="mt-4 p-2 text-xl mx-14 lg:mx-36 font-font3 flex justify-center rounded-xl bg-yellow-300 border-green-700 border-b-2  "
+              >
+                Our Gallery
+              </a>
+            </div>
           </div>
           <div className="sm:w-1/2 p-10 lg:pr-16">
             <div className="text">
@@ -120,6 +131,25 @@ const About = () => {
                   KrishiAgro.
                 </span>
               </p>
+              <div className="flex flex-col justify-center items-center pt-5 ">
+                <span className=" font-font3 text-black border-b-2 px-4 border-green-700 rounded-xl">
+                  Spotlighted by BBC Tamil
+                </span>
+                <video
+                  width="1920"
+                  height="1080"
+                  controls
+                  preload="none"
+                  className="rounded-xl mt-4"
+                  playsInline
+                  poster="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836977/Krishi/iyagtiiptwlkwgvsps41.jpg"
+                >
+                  <source
+                    src="https://res.cloudinary.com/dvzyx6yzg/video/upload/v1710835771/Krishi%20agro.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </div>
           </div>
         </div>

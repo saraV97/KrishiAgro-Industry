@@ -50,7 +50,7 @@ const Products = () => {
           viewport={{ once: true }}
           className="flex justify-center font-font1 py-10 text-5xl"
         >
-          Our Products
+          Our <span className="text-green-500">Products</span>
         </motion.h1>
 
         <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">

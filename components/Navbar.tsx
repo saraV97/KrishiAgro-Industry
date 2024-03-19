@@ -24,7 +24,7 @@ const Navbar = () => {
       className="flexBetween max-container padding-container flex-no-wrap fixed top-0 w-full z-30
      py-5 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30"
     >
-      <Link href="#">
+      <Link href="/#home">
         {/* <Image
           src="/krishilogo.svg"
           alt="logo"
@@ -34,11 +34,11 @@ const Navbar = () => {
         /> */}
         {/* <Logo /> */}
         {/* <div className="text-2xl text-green-500">Krishi</div> */}
-        <h1 className="w-full text-3xl font-bold text-green-500 underline-offset-4 underline decoration-white">
+        <h1 className="w-full text-3xl font-bold text-green-700 underline-offset-3 underline decoration-green-700">
           Krishi.
         </h1>
       </Link>
-      <ul className=" hidden h-full gap-12 lg:flex border px-10 rounded-lg pt-1 bg-slate-100">
+      <ul className=" hidden h-full gap-12 lg:flex px-10 rounded-lg pt-1 bg-white bg-opacity-50">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
@@ -139,7 +139,7 @@ const Navbar = () => {
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-green-500 xs:mb-40  underline-offset-4 underline decoration-green-900">
+        <h1 className="w-full text-3xl font-bold text-green-700 xs:mb-40  underline-offset-4 underline decoration-green-900">
           Krishi.
         </h1>
         {/* Mobile Navigation Items */}

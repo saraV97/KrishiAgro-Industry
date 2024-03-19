@@ -47,7 +47,7 @@ const Review = () => {
           viewport={{ once: true }}
           className="flex justify-center font-font1 py-10 text-5xl text-center"
         >
-          What our customers say
+          What our <span className="text-green-500">&nbsp;customers say</span>
         </motion.h1>
         <div className="w-4/5 m-auto">
           <Slider {...settings}>

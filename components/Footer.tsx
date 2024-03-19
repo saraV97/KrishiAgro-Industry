@@ -35,6 +35,11 @@ const Footer = () => {
                     Contact
                   </a>
                 </li>
+                <li className="my-2">
+                  <a className="hover:text-yellow-400" href="/gallery">
+                    Gallery
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="p-5 sm:w-7/12 sm:border-r border-black text-center">
