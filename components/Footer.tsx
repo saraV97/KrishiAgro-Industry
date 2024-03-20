@@ -1,3 +1,4 @@
+import Logo1 from "@/constants/Logo1";
 import React from "react";
 
 const Footer = () => {
@@ -16,27 +17,27 @@ const Footer = () => {
               </div>
               <ul>
                 <li className="my-2">
-                  <a className="hover:text-yellow-400" href="#home">
+                  <a className="hover:text-white" href="#home">
                     Home
                   </a>
                 </li>
                 <li className="my-2">
-                  <a className="hover:text-yellow-400" href="#products">
+                  <a className="hover:text-white" href="#products">
                     Products
                   </a>
                 </li>
                 <li className="my-2">
-                  <a className="hover:text-yellow-400" href="#about">
+                  <a className="hover:text-white" href="#about">
                     About
                   </a>
                 </li>
                 <li className="my-2">
-                  <a className="hover:text-yellow-400" href="#contact">
+                  <a className="hover:text-white" href="#contact">
                     Contact
                   </a>
                 </li>
                 <li className="my-2">
-                  <a className="hover:text-yellow-400" href="/gallery">
+                  <a className="hover:text-white" href="/gallery">
                     Gallery
                   </a>
                 </li>
@@ -50,6 +51,13 @@ const Footer = () => {
                 Join us in cultivating a brighter future for farming, one
                 harvest at a time.
               </p>
+              <div
+                // variants={fadeInAnimationVariants1}
+                className="my-[-40px] flex items-center justify-center gap-x-6 mx-7 md:mx-5 lg:mx-0"
+              >
+                <Logo1 />
+              </div>
+              {/* <Logo /> */}
             </div>
             <div className="p-5 sm:w-3/12  text-center md:text-left">
               <div className="text-sm uppercase text-amber-900 font-bold font-font3">
@@ -58,7 +66,7 @@ const Footer = () => {
               <ul>
                 <li className="my-2">
                   <a
-                    className="hover:text-green-600"
+                    className="hover:text-white"
                     href="https://maps.app.goo.gl/dCZfJ64kJQqwwp1C8"
                   >
                     6/24, Kudi Street, Unjapalayam Ponjai Idaiyar Keelmugam,
@@ -67,7 +75,7 @@ const Footer = () => {
                 </li>
                 <li className="my-2">
                   <a
-                    className="hover:text-green-600 text-sm break-words"
+                    className="hover:text-white text-sm break-words"
                     href="https://mail.google.com/mail/u/0/?fs=1&to=krishiagroindustry22@gmail.com&su=YourSubject&body=Hey&tf=cm"
                   >
                     krishiagroindustry22@gmail.com

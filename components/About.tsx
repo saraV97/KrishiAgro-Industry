@@ -50,7 +50,7 @@ const About = () => {
                       className="h-auto max-w-full rounded-lg shadow-xl"
                       width={300}
                       height={50}
-                      src="/about_1.jpeg"
+                      src="/about_1.webp"
                       alt=""
                     />
                   </div>
@@ -60,7 +60,7 @@ const About = () => {
                       className="h-auto max-w-full rounded-lg shadow-xl"
                       width={300}
                       height={50}
-                      src="/about_2.jpeg"
+                      src="/about_2.webp"
                       alt=""
                     />
                   </div>
@@ -71,7 +71,7 @@ const About = () => {
                       className="h-auto max-w-full rounded-lg mt-5 shadow-xl"
                       width={300}
                       height={29}
-                      src="/about_4.jpeg"
+                      src="/about_3.webp"
                       alt=""
                     />
                   </div>
@@ -91,14 +91,14 @@ const About = () => {
               <a
                 // href="/gallery"
                 onClick={openLightbox}
-                className="mt-4 p-2 cursor-pointer text-xl mx-14 lg:mx-36 font-font3 flex justify-center rounded-xl bg-yellow-300 border-green-700 border-b-2  "
+                className="mt-8 p-2 cursor-pointer text-xl mx-14 lg:mx-36 font-font3 flex justify-center rounded-xl hover:bg-yellow-200 bg-yellow-300 border-green-700 border-b-2  "
               >
                 Our Gallery
               </a>
               {renderLightbox({ slides })}
             </div>
           </div>
-          <div className="sm:w-1/2 p-10 lg:pr-16">
+          <div className="sm:w-1/2 sm:p-10 p-5 lg:pr-16">
             <div className="text">
               <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">
                 About us
@@ -128,7 +128,8 @@ const About = () => {
                   KrishiAgro.
                 </span>
               </p>
-              <div className="flex flex-col justify-center items-center pt-5 ">
+
+              <div className="flex flex-col justify-center items-center pt-5">
                 <span className=" font-font3 text-black border-b-2 px-4 border-green-700 rounded-xl">
                   Spotlighted by BBC Tamil
                 </span>

@@ -73,7 +73,7 @@ const titleVariants = {
     transition: {
       duration: 0.7,
       //   delay: 0.25,
-      staggerChildren: 0.3,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -121,7 +121,7 @@ const fadeInAnimationVariants1 = {
     transition: {
       ease: "easeInOut",
       duration: 0.7,
-      delay: 0.3,
+      delay: 0.6,
     },
   },
 };

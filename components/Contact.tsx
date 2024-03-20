@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_5ysam0p",
-        "template_5afwgma",
+        `${process.env.PUBLIC_KEY}`,
+        `${process.env.SERVICE_ID}`,
         form.current!,
-        "IWNAjZh2ycyXXUmi8"
+        `${process.env.TEMPLATE_ID}`
       )
       .then(
         () => {
@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex flex-col xl:flex-row border-20">
-      <div className="w-screen">
+      <div className="w-screen mt-14">
         <motion.h1
           variants={titleVariants1}
           initial="initial"
@@ -139,7 +139,7 @@ const Contact = () => {
                     ADDRESS
                   </h2>
                   <a
-                    href="https://maps.app.goo.gl/ig6pwDFRBgqi3gyr8"
+                    href="https://maps.app.goo.gl/dCZfJ64kJQqwwp1C8"
                     className="mt-1"
                   >
                     <span className="font-bold text-green-500">

@@ -7,7 +7,7 @@ import {
   fadeInAnimationVariants2,
 } from "./Animation";
 import { motion } from "framer-motion";
-import Logo1 from "@/constants/Logo1";
+// import Logo1 from "@/constants/Logo1";
 
 const Hero = () => {
   const [width, setWidth] = useState(0);
@@ -112,7 +112,6 @@ const Hero = () => {
     //   </div>
     // </section>
     <div className="relative isolate overflow-hidden bg-hero-pattern max-w-screen bg-cover bg-center h-screen">
-      {/* <div className="xl:bg-hero-pattern1 max-w-screen bg-opacity-5 z-8 bg-transparent"></div> */}
       <div
         className="absolute left-[calc(50%-4rem)] -z-10 top-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
         aria-hidden="true"
@@ -127,7 +126,7 @@ const Hero = () => {
           viewport={{ once: true }}
           className="max-w-full flex-shrink-0 px-4 text-center lg:mx-0 lg:pt-8"
         >
-          <h1 className="mt-10 opacity-75 text-4xl xs:text-[50px] lg:text-[8rem] font-bold tracking-tight font-font3 text-black sm:text-7xl">
+          <h1 className="mt-10 mx-10 opacity-75 text-4xl xs:text-[50px] lg:text-[8rem] font-bold tracking-tight font-font3 text-black sm:text-7xl">
             Feed the <span className="text-black">soil, </span>
             <br />
             Feed the
@@ -136,25 +135,39 @@ const Hero = () => {
             <span className="text-sky-500">Zynx</span> */}
           </h1>
 
-          <motion.div
+          {/* <motion.div
             variants={fadeInAnimationVariants1}
-            className="mt-4 flex items-center justify-center gap-x-6 mx-10 md:mx-5 lg:mx-0"
+            className="my-[-40px] md:my-0 md:mt-4 flex items-center justify-center gap-x-6 mx-7 md:mx-5 lg:mx-0"
           >
-            {/* <a
-              href="/register"
-              className="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
-              rel="noreferrer"
-            >
-              Try Now →
-            </a> */}
             <Logo1 />
-          </motion.div>
-          <p className="mt-5 mx-14 text-3xl lg:text-4xl font-font2 leading-8 text-white">
+          </motion.div> */}
+          <motion.p
+            variants={titleVariants}
+            className="mt-5 mx-10 text-3xl lg:text-4xl font-font2 leading-8 text-white"
+          >
             <span className="text-center">
               Grow smarter, Farm better with our
               <span className="text-yellow-300"> natural solutions.</span>
             </span>
-          </p>
+          </motion.p>
+
+          <div className="flex flex-col justify-center items-center m-5 p-5">
+            <p className="mx-auto mb-5 max-w-xl xxs:text-xs xs:text-base sm:text-lg text-gray-200 leading-7 ">
+              We are dedicated to empowering farmers with the finest fertilizers
+              and soil enhancers. From boosting yields to promoting soil health,
+              our products are tailored to fuel your agricultural success.
+              Explore our range and witness the difference in your harvests
+              today!"
+            </p>
+
+            <a
+              href="#products"
+              className="bg-white hover:bg-green-700 hover:text-white bg-opacity-70 rounded-lg py-2 px-5 "
+            >
+              Explore Products
+            </a>
+          </div>
+
           {/* <p className="mt-6 text-lg  md:text-xl  px-10 leading-8 text-[#FBFADA]">
             <span className="text-center">
               <span className="text-yellow-400">Grow smarter, </span>
@@ -168,7 +181,7 @@ const Hero = () => {
           >
             {/* className="mt-6 text-3xl font-font3 leading-8 text-white"> */}
             <a
-              href="#products"
+              href="#about"
               className="flex flex-col justify-center items-center"
             >
               <div className="pb-1 text-gray-100 opacity-60">

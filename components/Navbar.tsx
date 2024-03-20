@@ -11,19 +11,6 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  // useEffect(() => {
-  //   // Applying on mount
-  //   if (nav) {
-  //     document.body.style.overflow = "hidden";
-  //   }
-  //   // Applying on unmount
-  //   else {
-  //     return () => {
-  //       document.body.style.overflow = "visible";
-  //     };
-  //   }
-  // }, []);
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -42,7 +29,7 @@ const Navbar = () => {
       whileInView="animate"
       viewport={{ once: true }}
       className="flexBetween max-container padding-container flex-no-wrap fixed top-0 w-full z-30
-     py-5 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30"
+     py-5 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30 shadow-lg"
     >
       <Link href="/#home">
         {/* <Image
@@ -154,12 +141,12 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed lg::hidden left-0 top-0 w-full bg-white h-screen flex flex-col p-10 gap-10 justify-center items-center ease-in-out duration-500"
-            : " w-[60%] h-screen flex flex-col p-10 gap-10 justify-center items-center duration-500 ease-in-out fixed top-0 bottom-0 left-[200%]"
+            ? "fixed lg::hidden left-0 top-0 w-full bg-white h-screen flex flex-col p-10 gap-10 justify-center items-center ease-out duration-100"
+            : " w-[80%] h-screen flex flex-col p-10 gap-10 justify-center items-center duration-300 ease-in-out fixed top-0 bottom-0 left-[250%]"
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-3xl font-bold text-green-700 xs:mb-40  underline-offset-4 underline decoration-green-900">
+        <h1 className="w-full text-3xl font-bold text-green-700 xs:mb-5 underline-offset-4 underline decoration-green-700">
           Krishi.
         </h1>
         {/* Mobile Navigation Items */}
@@ -174,7 +161,7 @@ const Navbar = () => {
           </Link>
         ))}
 
-        <div className="xs:mt-10 border-t-2 flex gap-20 ">
+        <div className="xs:mt-5 border-t-2 flex gap-20 ">
           <a
             href="#"
             className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"

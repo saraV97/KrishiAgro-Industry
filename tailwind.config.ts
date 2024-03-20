@@ -41,6 +41,7 @@ module.exports = {
         "pattern-2": "url('/pattern-bg.png')",
       },
       screens: {
+        xxs: "350px",
         xs: "376px",
         "3xl": "1680px",
         "4xl": "2200px",

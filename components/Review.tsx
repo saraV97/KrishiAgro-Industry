@@ -38,8 +38,8 @@ const Review = () => {
   };
 
   return (
-    <section className="flex flex-col xl:flex-row ">
-      <div className="w-screen  mb-5 mt-5">
+    <section className="flex flex-col xl:flex-row">
+      <div className="w-screen mb-5 mt-5">
         <motion.h1
           variants={titleVariants1}
           initial="initial"

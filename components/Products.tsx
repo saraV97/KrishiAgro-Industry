@@ -2,12 +2,7 @@
 import { PRODUCT_LIST } from "@/constants";
 import React from "react";
 import Image from "next/image";
-import {
-  titleVariants1,
-  fadeInAnimationVariants1,
-  fadeInAnimationVariants2,
-  productVariants,
-} from "./Animation";
+import { titleVariants1, productVariants } from "./Animation";
 import { motion } from "framer-motion";
 
 const Products = () => {
@@ -48,7 +43,7 @@ const Products = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="flex justify-center font-font1 py-10 text-5xl"
+          className="flex justify-center font-font1 pb-10 text-5xl"
         >
           Our <span className="text-green-500">&nbsp;Products</span>
         </motion.h1>
