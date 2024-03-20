@@ -9,8 +9,6 @@ import slides from "@/constants";
 const About = () => {
   const { openLightbox, renderLightbox } = useLightbox();
 
-  console.log(slides);
-
   return (
     <section id="about" className="flex flex-col xl:flex-row border-20">
       <div className="w-screen p-5">

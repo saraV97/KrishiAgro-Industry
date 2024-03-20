@@ -18,7 +18,7 @@ const Navbar = () => {
   useEffect(() => {
     if (nav) {
       document.body.style.overflow = "hidden";
-    } else document.body.style.overflow = "scroll";
+    } else document.body.style.overflow = "visible";
     return () => {};
   }, [nav]);
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       whileInView="animate"
       viewport={{ once: true }}
       className="flexBetween max-container padding-container flex-no-wrap fixed top-0 w-full z-30
-     py-5 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30 shadow-lg"
+     py-3 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30 shadow-lg"
     >
       <Link href="/#home">
         {/* <Image
@@ -41,7 +41,7 @@ const Navbar = () => {
         /> */}
         {/* <Logo /> */}
         {/* <div className="text-2xl text-green-500">Krishi</div> */}
-        <h1 className="w-full text-3xl font-bold text-green-700 underline-offset-3 underline decoration-green-700">
+        <h1 className="md:herotext w-full text-3xl font-bold text-green-700 underline-offset-3 underline decoration-green-700">
           Krishi.
         </h1>
       </Link>

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     images:
       "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710931955/Krishi%20Compressed/etejm6lsgzf45m3mc1tw.png",
+    url: "https://krishiagro.in",
   },
   twitter: {
     images:

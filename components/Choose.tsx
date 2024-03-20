@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Choose = () => {
   return (
-    <section className="flex flex-col xl:flex-row ">
+    <section className="flex flex-col xl:flex-row">
       <div className="w-screen">
         <motion.h1
           variants={titleVariants1}

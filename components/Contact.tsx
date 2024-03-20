@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        `${process.env.PUBLIC_KEY}`,
         `${process.env.SERVICE_ID}`,
+        `${process.env.TEMPLATE_ID}`,
         form.current!,
-        `${process.env.TEMPLATE_ID}`
+        `${process.env.NEXT_PUBLIC_MAIL_ID}`
       )
       .then(
         () => {
@@ -24,6 +24,7 @@ const Contact = () => {
         },
         (error) => {
           alert("Error: Mail not sent.");
+          console.log(error as string);
         }
       );
     event.currentTarget.reset();
