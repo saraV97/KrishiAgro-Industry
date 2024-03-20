@@ -157,7 +157,7 @@ const Hero = () => {
               and soil enhancers. From boosting yields to promoting soil health,
               our products are tailored to fuel your agricultural success.
               Explore our range and witness the difference in your harvests
-              today!"
+              today!
             </p>
 
             <a
