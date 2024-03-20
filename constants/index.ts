@@ -8,7 +8,7 @@ export const NAV_LINKS = [
 export const PRODUCT_LIST = [
   {
     image:
-      "https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710948628/Krishi%20Products/nf1dwqilnvl01nlsfpuz.jpg",
     brand: "Krishi",
     label: "Vermicompost",
     key: 1,
@@ -18,7 +18,7 @@ export const PRODUCT_LIST = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710948628/Krishi%20Products/uymx25fbpe5vx8ydgbi3.jpg",
     brand: "Krishi",
     label: "Compost",
     key: 2,
@@ -28,7 +28,7 @@ export const PRODUCT_LIST = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710948629/Krishi%20Products/dbhjrf8tryofbk6fwaai.jpg",
     brand: "Krishi",
     label: "Organic Potas",
     key: 3,
@@ -38,7 +38,7 @@ export const PRODUCT_LIST = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710948628/Krishi%20Products/josvk7u8lfkczwn5huuq.jpg",
     brand: "Krishi",
     label: "Organic NPK",
     key: 4,

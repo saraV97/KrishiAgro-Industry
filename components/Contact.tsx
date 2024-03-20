@@ -7,11 +7,6 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef(null);
-  console.log(
-    process.env.NEXT_PUBLIC_SERVICE_ID,
-    process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    process.env.NEXT_PUBLIC_MAIL_ID
-  );
 
   const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
