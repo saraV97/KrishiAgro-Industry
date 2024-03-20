@@ -45,7 +45,7 @@ const Review = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className=" font-font1 py-10  text-5xl text-center"
+          className=" font-font1 py-10 mx-3 text-5xl text-center"
         >
           What our<span className="text-green-500">&nbsp;customers say</span>
         </motion.h1>

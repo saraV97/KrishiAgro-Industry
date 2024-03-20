@@ -2,7 +2,7 @@
 import { NAV_LINKS } from "@/constants";
 // import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Button from "./Button";
 // import Logo from "@/constants/logo";
 import { topDownVariants1 } from "./Animation";
@@ -11,9 +11,29 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+  // useEffect(() => {
+  //   // Applying on mount
+  //   if (nav) {
+  //     document.body.style.overflow = "hidden";
+  //   }
+  //   // Applying on unmount
+  //   else {
+  //     return () => {
+  //       document.body.style.overflow = "visible";
+  //     };
+  //   }
+  // }, []);
+
   const handleNav = () => {
     setNav(!nav);
   };
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else document.body.style.overflow = "scroll";
+    return () => {};
+  }, [nav]);
 
   return (
     <motion.div
@@ -134,7 +154,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed lg::hidden left-0 top-0 w-full h-screen  bg-white flex flex-col p-10 gap-10 justify-center items-center ease-in-out duration-500"
+            ? "fixed lg::hidden left-0 top-0 w-full bg-white h-screen flex flex-col p-10 gap-10 justify-center items-center ease-in-out duration-500"
             : " w-[60%] h-screen flex flex-col p-10 gap-10 justify-center items-center duration-500 ease-in-out fixed top-0 bottom-0 left-[200%]"
         }
       >

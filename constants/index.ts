@@ -132,3 +132,71 @@ export const REVIEWS = [
     id: 4,
   },
 ];
+
+const unsplashPhotos = [
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/qospnlr4zq1cgxzqnquw.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/hpmbw5imwhquxly0houo.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/dkwfkd1nw96auuqe43ot.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/n6q7jy3vplnobdxndrto.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/i8ox9mi6198t06cla0oy.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/u6c6cqh8tmuhaqxyxgnd.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/ygmtsa9grfkafh1i33si.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/pf0punivy11omrcjakqv.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/xirsjljuj5tvrh4vmfff.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/jlapmibln0hngstxtau7.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/vzyabdhpg6vztowmekho.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/dc4obkgrb5cnybculpxw.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/e5qyqjdet3vnkxdkn2fv.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/qoaibsjw4qsywpr3pqfp.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865139/Krishi%20Compressed/sonmwbpbafw01i5k08u0.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/tjzxujw6sbzaiskdt913.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865137/Krishi%20Compressed/i7kwahdl51pyhmkgsure.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865138/Krishi%20Compressed/e5klkposuoigperufexn.webp",
+  },
+  {
+    src: "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710865136/Krishi%20Compressed/saqxtnbzyjsen6xat6wa.webp",
+  },
+];
+
+const slides = unsplashPhotos.map((photo) => {
+  return {
+    src: photo.src,
+  };
+});
+
+export default slides;

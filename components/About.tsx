@@ -1,25 +1,19 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { titleVariants1, productVariants } from "./Animation";
+import { titleVariants1 } from "./Animation";
 import { motion } from "framer-motion";
-import CldVideoPlayer from "svelte-cloudinary";
-import Button from "./Button";
+import useLightbox from "@/components/useLightbox";
+import slides from "@/constants";
 
 const About = () => {
+  const { openLightbox, renderLightbox } = useLightbox();
+
+  console.log(slides);
+
   return (
     <section id="about" className="flex flex-col xl:flex-row border-20">
       <div className="w-screen p-5">
-        {/* <div className="invisible md:visible home-banner-container">
-          <Image
-            src="/color-blob-banner.png"
-            alt="banner1"
-            width={700}
-            height={32}
-            className="home-bannerImage-container3"
-          />
-        </div> */}
-
         <div className="relative flex pt-12">
           <div
             className="absolute max-w-[1000px] top-[200px] left-[10px] z-[-2] opacity-70 
@@ -49,14 +43,6 @@ const About = () => {
         <div className="sm:flex items-center max-w-full xl:mx-20">
           <div className="sm:w-1/2 p-10">
             <div className="image object-center text-center flex justify-center items-center">
-              {/* <Image
-                src="/about_img.jpg"
-                alt="aboutimg"
-                width={400}
-                height={29}
-                className="border rounded-xl w-[350px] shadow-md"
-              /> */}
-
               <div className="grid grid-cols-2 gap-4">
                 <div className="grid gap-4">
                   <div>
@@ -93,12 +79,23 @@ const About = () => {
               </div>
             </div>
             <div>
+              {/* <button
+                type="button"
+                className="mt-4 p-2 w-52 text-xl mx-14 lg:mx-36 font-font3 rounded-xl bg-yellow-300 border-green-700 border-b-2  "
+                onClick={openLightbox}
+              >
+                Open Lightbox
+              </button>
+
+              {renderLightbox({ slides })} */}
               <a
-                href="/gallery"
-                className="mt-4 p-2 text-xl mx-14 lg:mx-36 font-font3 flex justify-center rounded-xl bg-yellow-300 border-green-700 border-b-2  "
+                // href="/gallery"
+                onClick={openLightbox}
+                className="mt-4 p-2 cursor-pointer text-xl mx-14 lg:mx-36 font-font3 flex justify-center rounded-xl bg-yellow-300 border-green-700 border-b-2  "
               >
                 Our Gallery
               </a>
+              {renderLightbox({ slides })}
             </div>
           </div>
           <div className="sm:w-1/2 p-10 lg:pr-16">
