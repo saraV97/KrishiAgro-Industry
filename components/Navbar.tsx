@@ -161,6 +161,7 @@ const Navbar = () => {
             initial="initial"
             whileInView="animate"
             custom={index}
+            key={index}
           >
             <Link
               href={link.href}
