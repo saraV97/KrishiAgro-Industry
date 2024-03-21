@@ -1,14 +1,26 @@
 "use client";
 import { NAV_LINKS } from "@/constants";
-// import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-// import Button from "./Button";
-// import Logo from "@/constants/logo";
-import { topDownVariants1 } from "./Animation";
-import { motion } from "framer-motion";
+import { staggerVariantsRight, topDownVariants1 } from "./Animation";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 const Navbar = () => {
+  // const { scrollY } = useScroll();
+  // // /** this hook manages state **/
+  // const [hidden, setHidden] = useState(false);
+  // useMotionValueEvent(scrollY, "change", (latest) => {
+  //   const previous = scrollY.getPrevious();
+  //   // console.log(latest, previous);
+  //   if (latest > previous!) {
+  //     setHidden(true);
+  //     console.log(latest, previous);
+  //   } else {
+  //     setHidden(false);
+  //     console.log(latest, previous);
+  //   }
+  // });
+
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -23,6 +35,12 @@ const Navbar = () => {
   }, [nav]);
 
   return (
+    // <motion.nav
+    //   variants={{ visible: { y: 0 }, hidden: { y: "-100" } }}
+    //   animate={hidden ? "hidden" : "visible"}
+    //   transition={{ duration: 0.35, ease: "easeInOut" }}
+    //   className="stick top-0"
+    // >
     <motion.div
       variants={topDownVariants1}
       initial="initial"
@@ -32,15 +50,6 @@ const Navbar = () => {
      py-3 backdrop-blur-sm border-b bg-slate-400 bg-opacity-30 shadow-lg"
     >
       <Link href="/#home">
-        {/* <Image
-          src="/krishilogo.svg"
-          alt="logo"
-          width={150}
-          height={29}
-          className="text-white"
-        /> */}
-        {/* <Logo /> */}
-        {/* <div className="text-2xl text-green-500">Krishi</div> */}
         <h1 className="md:herotext w-full text-3xl font-bold text-green-700 underline-offset-3 underline decoration-green-700">
           Krishi.
         </h1>
@@ -57,39 +66,41 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      {/* <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div> */}
-      {/* <Image
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden w-10 m-0"
-      /> */}
 
-      {/* Mobile Navigation*/}
+      {/* Mobile Navigation-----------------------------------------------------------------*/}
 
-      <div onClick={handleNav} className="block lg:hidden z-40">
+      <button
+        onClick={handleNav}
+        className="lg:hidden z-40 flex flex-col justify-center items-center cursor-pointer
+         bg-tranparent w-9 h-4 opacity-75"
+      >
+        <span
+          className={`bg-black block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      nav ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+                    }`}
+        ></span>
+        <span
+          className={`bg-black block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm my-0.5 ${
+                      nav ? "opacity-0" : "opacity-100"
+                    }`}
+        ></span>
+        <span
+          className={`bg-black block transition-all duration-300 ease-out 
+                    h-1 w-6 rounded-sm ${
+                      nav ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+                    }`}
+        ></span>
+      </button>
+
+      {/* <div onClick={handleNav} className="block lg:hidden z-40">
         {nav ? (
           <button
             className="flex items-center px-3 py-2 border rounded
-           border-slate-300 text-slate-700 hover:text-green-500
-            hover:border-gray-500"
+               border-slate-300 text-slate-700  hover:text-green-500
+                hover:border-gray-500"
           >
-            {/* <Image
-            src="/menu.png"
-            alt="menu"
-            width={32}
-            height={32}
-            className="h-5 w-5"
-          /> */}
-
             <svg
               width="24"
               height="24"
@@ -106,15 +117,9 @@ const Navbar = () => {
         ) : (
           <button
             className="flex items-center px-3 py-2 border rounded
-           border-white text-black hover:text-green-500 hover:border-gray-500"
+               border-white text-black hover:text-green-500 bg-white bg-opacity-55
+                hover:border-gray-500"
           >
-            {/* <Image
-            src="/close.png"
-            alt="close"
-            width={32}
-            height={32}
-            className="h-5 w-5"
-          /> */}
             <svg
               fill="none"
               height="24"
@@ -137,7 +142,7 @@ const Navbar = () => {
             </svg>
           </button>
         )}
-      </div>
+      </div> */}
       <ul
         className={
           nav
@@ -150,21 +155,28 @@ const Navbar = () => {
           Krishi.
         </h1>
         {/* Mobile Navigation Items */}
-        {NAV_LINKS.map((link) => (
-          <Link
-            href={link.href}
-            key={link.key}
-            onClick={handleNav}
-            className="p-4 border-b bg-yellow-300 border-b-green-700 rounded-xl shadow-lg px-20 hover:bg-green-500 duration-300 hover:text-black cursor-pointer border-gray-600"
+        {NAV_LINKS.map((link, index) => (
+          <motion.div
+            variants={staggerVariantsRight}
+            initial="initial"
+            whileInView="animate"
+            custom={index}
           >
-            {link.label}
-          </Link>
+            <Link
+              href={link.href}
+              key={link.key}
+              onClick={handleNav}
+              className="p-4 border-b bg-yellow-300 font-font2 border-b-green-700 rounded-xl shadow-lg px-20 hover:bg-lime-500 duration-300 hover:text-black cursor-pointer border-gray-600"
+            >
+              {link.label}
+            </Link>
+          </motion.div>
         ))}
 
         <div className="xs:mt-5 border-t-2 flex gap-20 ">
           <a
             href="#"
-            className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"
+            className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-black dark:text-gray-700"
           >
             <svg
               className="w-16 h-16"
@@ -181,7 +193,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"
+            className="text-gray-500 py-10 hover:text-gray-900 dark:hover:text-black dark:text-gray-700"
           >
             <svg
               className="w-16 h-16"
@@ -199,6 +211,7 @@ const Navbar = () => {
         </div>
       </ul>
     </motion.div>
+    // </motion.nav>
   );
 };
 

@@ -52,14 +52,13 @@ const staggerVariantsRight = {
     x: 50,
     opacity: 0,
   },
-  animate: {
+  animate: (index: number) => ({
     x: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
-      staggerChildren: 0.1,
+      delay: 0.05 * index,
     },
-  },
+  }),
 };
 
 const titleVariants = {

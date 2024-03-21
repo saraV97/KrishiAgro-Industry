@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
               {/* <Logo /> */}
             </div>
-            <div className="p-5 sm:w-3/12  text-center md:text-left">
+            <div className="p-5 sm:w-3/12 text-center md:text-left">
               <div className="text-sm uppercase text-amber-900 font-bold font-font3">
                 Contact Us
               </div>
@@ -75,11 +75,17 @@ const Footer = () => {
                 </li>
                 <li className="my-2">
                   <a
-                    className="hover:text-white text-sm break-words"
+                    className="hover:text-white text-sm break-words lg:break-normal"
                     href="https://mail.google.com/mail/u/0/?fs=1&to=krishiagroindustry22@gmail.com&su=YourSubject&body=Hey&tf=cm"
                   >
                     krishiagroindustry22@gmail.com
                   </a>
+                </li>
+                <li className="my-2">
+                  <p className="text-sm break-words">+91 95859 37577</p>
+                </li>
+                <li className="my-2">
+                  <p className=" text-sm break-words">+91 76398 87577</p>
                 </li>
               </ul>
             </div>
@@ -93,22 +99,52 @@ const Footer = () => {
                     className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"
                   >
                     <svg
-                      className="w-10 h-10"
+                      className="w-9 h-10"
+                      viewBox="0 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      ></path>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>whatsapp [#4f4f4f]</title>
+                        <desc>Created with Sketch.</desc> <defs> </defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          strokeWidth="1"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-300.000000, -7599.000000)"
+                            fill="currentColor"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439"
+                                id="whatsapp-[#4f4f4f]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://wa.me/9585937577?text=Hi%2C%20I%27m%20am%20interested%20in%20your%20products"
                     className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-700"
                   >
                     <svg

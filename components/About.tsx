@@ -49,7 +49,7 @@ const About = () => {
                       width={300}
                       height={50}
                       src="/about_1.webp"
-                      alt=""
+                      alt="workers"
                     />
                   </div>
 
@@ -59,7 +59,7 @@ const About = () => {
                       width={300}
                       height={50}
                       src="/about_2.webp"
-                      alt=""
+                      alt="owner"
                     />
                   </div>
                 </div>
@@ -70,22 +70,13 @@ const About = () => {
                       width={300}
                       height={29}
                       src="/about_3.webp"
-                      alt=""
+                      alt="fertilizer"
                     />
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              {/* <button
-                type="button"
-                className="mt-4 p-2 w-52 text-xl mx-14 lg:mx-36 font-font3 rounded-xl bg-yellow-300 border-green-700 border-b-2  "
-                onClick={openLightbox}
-              >
-                Open Lightbox
-              </button>
-
-              {renderLightbox({ slides })} */}
               <a
                 // href="/gallery"
                 onClick={openLightbox}

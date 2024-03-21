@@ -35,7 +35,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "hero-pattern": "url('/field.jpg')",
+        "hero-pattern": "url('/field.webp')",
         "hero-pattern1": "url('/heroimg2.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",

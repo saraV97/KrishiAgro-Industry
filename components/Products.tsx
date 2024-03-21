@@ -59,10 +59,11 @@ const Products = () => {
               key={data.key}
               className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl"
             >
-              <a href="#">
+              {/* <a href=""> */}
+              <div>
                 <Image
                   src={data.image}
-                  alt="Product"
+                  alt={data.label}
                   width={320}
                   height={288}
                   className="h-80 w-72 object-cover rounded-t-xl"
@@ -102,7 +103,8 @@ const Products = () => {
                   </div> */}
                   </div>
                 </div>
-              </a>
+                {/* </a> */}
+              </div>
             </motion.div>
           ))}
           {/* <!--   🛑 Product card 1 - Ends Here  --> */}

@@ -4,6 +4,8 @@ import Button from "./Button";
 import { titleVariants1 } from "./Animation";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import Whatsapp from "@/constants/whatsapp";
 
 const Contact = () => {
   const form = useRef(null);
@@ -48,6 +50,14 @@ const Contact = () => {
           border rounded-xl shadow-xl bg-gradient-to-r from-green-300 to-green-500"
           >
             <div className="lg:w-2/4 md:w-1/2 bg-transparent flex flex-col md:mr-auto w-full md:py-8 mb-8 md:mb-0 pb-10 sm:pl-5">
+              <div className="flex justify-center mb-5">
+                <a href="https://wa.me/9585937577?text=Hi%2C%20I%27m%20am%20interested%20in%20your%20products">
+                  <Whatsapp />
+                </a>
+              </div>
+
+              <p className="flex justify-center mb-2">OR</p>
+
               <h2 className="text-gray-900 text-center text-lg mb-1 font-medium title-font">
                 Send a message
               </h2>
@@ -161,7 +171,8 @@ const Contact = () => {
                   <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                     PHONE
                   </h2>
-                  <p className="leading-relaxed">+91 76398 87577</p>
+                  <p className="leading-relaxed">+91 76398 87577 </p>
+                  <p className="leading-relaxed">+91 95859 37577</p>
                 </div>
               </div>
             </div>

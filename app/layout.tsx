@@ -8,12 +8,60 @@ export const metadata: Metadata = {
   description:
     "Discover top-quality fertilizers and soil enhancers at Krishiagro. Boost your crop yields and promote soil health with our premium products. Shop now.",
   metadataBase: new URL("https://krishiagro.in"),
+  applicationName: "Kishiagro",
+  keywords: [
+    "Organic fertilizers",
+    "fertilizers",
+    "Organic",
+    "Chemicalfree fertilizers",
+    "Soil enhancers",
+    "Crop nutrition",
+    "Plant nutrients",
+    "Agricultural supplements",
+    "agriculture",
+    "farming",
+    "Natural fertilizers",
+    "Garden fertilizers",
+    "Farm fertilizers",
+    "Eco-friendly",
+    "Eco-friendly fertilizers",
+    "Sustainable farming solutions",
+    "Soil health products",
+    "Crop yield boosters",
+    "Plant growth stimulants",
+    "krishiagro",
+  ],
+  verification: {
+    google: "google",
+    yandex: "yandex",
+    yahoo: "yahoo",
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+  },
+  authors: [{ name: "Sara" }],
+  creator: "Sara",
+  alternates: {
+    canonical: "https://krishiagro.in",
+  },
   openGraph: {
+    title: "Krishiagro | Enhance Crop Yields with Natural Fertilizers",
+    description:
+      "Discover top-quality fertilizers and soil enhancers at Krishiagro. Boost your crop yields and promote soil health with our premium products. Shop now.",
+    type: "website",
     images:
       "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710931955/Krishi%20Compressed/etejm6lsgzf45m3mc1tw.png",
     url: "https://krishiagro.in",
   },
   twitter: {
+    title: "Krishiagro | Enhance Crop Yields with Natural Fertilizers",
+    description:
+      "Discover top-quality fertilizers and soil enhancers at Krishiagro. Boost your crop yields and promote soil health with our premium products. Shop now.",
     images:
       "https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710931955/Krishi%20Compressed/etejm6lsgzf45m3mc1tw.png",
   },

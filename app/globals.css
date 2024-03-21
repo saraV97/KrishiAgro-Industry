@@ -190,9 +190,7 @@ body {
   top: 100px;
   right: -170px;
   z-index: -2;
-  max-width: 700px;
-  background-image: contain;
-  
+  max-width: 700px;  
 }
 .home-bannerImage-container1 {
   position: absolute;
@@ -310,7 +308,4 @@ svg {
         transform: translate(0, 0)
     }
 }
-
-
-
 }
