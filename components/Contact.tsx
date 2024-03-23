@@ -144,7 +144,7 @@ const Contact = () => {
                 title="map"
               ></iframe>
 
-              <div className=" bg-white relative flex flex-wrap py-6 rounded shadow-md mt-40">
+              <div className=" bg-white relative flex flex-col lg:flex-row lg:flex-wrap w-[100%] py-6 rounded shadow-md mt-40">
                 <div className="lg:w-1/2 px-6">
                   <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                     ADDRESS
@@ -165,7 +165,7 @@ const Contact = () => {
                   <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                     EMAIL
                   </h2>
-                  <a className="text-yellow-500 leading-relaxed">
+                  <a className="text-yellow-500 leading-relaxed break-words">
                     krishiagroindustry22@gmail.com
                   </a>
                   <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
