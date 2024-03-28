@@ -81,7 +81,6 @@ const Review = () => {
                         alt="reviewImg"
                         src={data.img}
                         className="h-14 w-14 object-cover"
-                        // loading="lazy"
                         width={56}
                         height={56}
                       />

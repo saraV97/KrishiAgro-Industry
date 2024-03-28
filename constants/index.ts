@@ -103,7 +103,7 @@ export const REVIEWS = [
     review:
       "Outstanding vermicompost, impeccable service, a farmer's dream come true.",
     name: "Kumar",
-    img: "/user2.jpg",
+    img: "/user3.png",
     designation: "Farmer",
     id: 1,
   },
@@ -111,7 +111,7 @@ export const REVIEWS = [
     review:
       "Top-notch quality, sustainable solutions Krishi Agro exceeds expectations.",
     name: "Guna",
-    img: "/user1.jpg",
+    img: "/user2.png",
     designation: "Store owner",
     id: 2,
   },
@@ -127,7 +127,7 @@ export const REVIEWS = [
     review:
       "Efficient, eco-conscious, and effective. They sets the standard in agriculture.",
     name: "Karthik",
-    img: "/user3.png",
+    img: "/user2.png",
     designation: "Reseller",
     id: 4,
   },

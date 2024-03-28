@@ -129,7 +129,7 @@ const About = () => {
                   preload="none"
                   className="rounded-xl mt-4"
                   playsInline
-                  poster="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1710836977/Krishi/iyagtiiptwlkwgvsps41.jpg"
+                  poster="https://res.cloudinary.com/dvzyx6yzg/image/upload/v1711615306/Krishi%20Compressed/sso6eba1ziyldbdyindc.webp"
                 >
                   <source
                     src="https://res.cloudinary.com/dvzyx6yzg/video/upload/v1710835771/Krishi%20agro.mp4"

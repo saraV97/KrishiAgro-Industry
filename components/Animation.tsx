@@ -24,10 +24,9 @@ const topDownVariants1 = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.5,
-      delay: 0.6,
+      duration: 0.4,
+      delay: 0.4,
       ease: easeOut,
-      //   staggerChildren: 0.1,
     },
   },
 };
@@ -70,7 +69,7 @@ const titleVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
+      duration: 0.5,
       //   delay: 0.25,
       staggerChildren: 0.4,
     },
@@ -88,7 +87,6 @@ const productVariants = {
     transition: {
       duration: 0.5,
       ease: easeIn,
-      //   delay: 0.25,
     },
   },
 };
@@ -104,7 +102,6 @@ const titleVariants1 = {
     transition: {
       duration: 0.7,
       delay: 0.25,
-      // staggerChildren: 0.3,
     },
   },
 };
@@ -139,11 +136,6 @@ const fadeInAnimationVariants2 = {
     },
   },
 };
-
-// const selectZoomVariants = {
-//   whileHover: { scale: 1.1 },
-//   transition: { type: "spring", stiffness: 400, damping: 10 },
-// };
 
 export {
   titleVariants,

@@ -5,10 +5,6 @@ const Footer = () => {
   return (
     <section className="flex flex-col xl:flex-row ">
       <div className="w-full mt-10">
-        {/* <h1 className="flex justify-center font-font1 py-10 text-5xl text-center">
-          What our customers say
-        </h1> */}
-
         <div className=" bg-green-300">
           <div className="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
             <div className="p-5 sm:w-2/12 sm:border-r border-black text-center md:text-left">
@@ -57,7 +53,6 @@ const Footer = () => {
               >
                 <Logo1 />
               </div>
-              {/* <Logo /> */}
             </div>
             <div className="p-5 sm:w-3/12 text-center md:text-left">
               <div className="text-sm uppercase text-amber-900 font-bold font-font3">
